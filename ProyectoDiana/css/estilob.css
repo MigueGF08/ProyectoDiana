@@ -1,0 +1,119 @@
+/* Reset de algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo oscuro y tipografía futurista */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px);
+    border: 2px solid #00ff00;
+}
+
+/* Título */
+h2 {
+    color: #00ff00;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo del formulario */
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Etiquetas del formulario */
+label {
+    color: #ff00ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Efecto al poner el foco */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff00ff;
+    background-color: #333;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Botón de envío */
+button {
+    background-color: #ff00ff;
+    color: #0f0f0f;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* Efecto al pasar el mouse por el botón */
+button:hover {
+    background-color: #00ff00;
+    color: #0f0f0f;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+ #Registrar{
+    margin-top: 20px; /* Ajusta este valor para moverlo más abajo */
+}
+#OlvidasteTuContra{
+    margin-top: 20px;
+}
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    border-top: 2px solid #00ff00;
+}
+ 

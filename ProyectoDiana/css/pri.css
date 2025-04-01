@@ -1,0 +1,208 @@
+/* Reset de algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Hero section */
+.hero-container {
+    text-align: center;
+    margin-top: 80px;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+.hero-container h1 {
+    color: #00ff00;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-container p {
+    color: #ff00ff;
+    font-size: 20px;
+}
+
+/* Formulario de reserva */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+h2 {
+    color: #00ff00;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ff00ff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select, input[type="date"], input[type="time"], input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Efecto de foco */
+select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #ff00ff;
+    background-color: #333;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Botón de envío */
+button {
+    background-color: #ff00ff;
+    color: #0f0f0f;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efecto hover del botón */
+button:hover {
+    background-color: #00ff00;
+    color: #0f0f0f;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Sección de contacto */
+.contact-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    border: 2px solid #00ff00;
+}
+
+.contact-container h2 {
+    color: #00ff00;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-container p {
+    color: #ff00ff;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #00ff00;
+    color: #ff00ff;
+}
+
+footer p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f0f;
+    border-left: 2px solid #00ff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff00;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reserva de Aulas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contenedor del mapa */
+        .map-container {
+            margin-top: 60px; /* Para evitar que el header tape el mapa */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* Altura de la pantalla menos el header */
+        }
+
+        /* Estilos de la imagen del mapa */
+        .map-container img {
+            border: 5px solid #333; /* Borde del mapa */
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mejor visualización */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#reservas">Reservar Aula</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="">Consulta tu Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mapa del campus -->
+    <div class="map-container">
+        <img src="img/Mapauag.jpg" alt="Mapa del Campus" usemap="#campusmap">
+        <map name="campusmap">
+            <!-- Áreas clickeables generadas por Image Maps -->
+            <area target="" alt="EdificioH" title="EdificioH" href="" coords="237,425,277,448" shape="rect" onclick="seleccionarEdificio('Edificio H')">
+            <area target="" alt="EdificioG" title="EdificioG" href="" coords="218,368,252,402" shape="rect" onclick="seleccionarEdificio('Edificio G')">
+            <area target="" alt="EdificioE" title="EdificioE" href="" coords="314,366,373,385" shape="rect" onclick="seleccionarEdificio('Edificio E')">
+            <area target="" alt="EdificioF" title="EdificioF" href="" coords="258,354,296,364" shape="rect" onclick="seleccionarEdificio('Edificio F')">
+            <area target="" alt="EdificioA" title="EdificioA" href="" coords="445,316,492,322" shape="rect" onclick="seleccionarEdificio('Edificio A')">
+            <area target="" alt="EdificioB" title="EdificioB" href="" coords="410,340,441,362" shape="rect" onclick="seleccionarEdificio('Edificio B')">
+            <area target="" alt="EdificioC" title="EdificioC" href="" coords="365,304,418,311" shape="rect" onclick="seleccionarEdificio('Edificio C')">
+            <area target="" alt="EdificioI" title="EdificioI" href="" coords="300,433,362,440" shape="rect" onclick="seleccionarEdificio('Edificio I')">
+            <area target="" alt="EdificioD" title="EdificioD" href="" coords="317,327,354,334" shape="rect" onclick="seleccionarEdificio('Edificio D')">
+        </map>
+    </div>
+
+    <script>
+        // Función para capturar la selección del edificio
+        function seleccionarEdificio(edificio) {
+            alert("Edificio seleccionado: " + edificio);
+        }
+    </script>
+</body>
+</html>
